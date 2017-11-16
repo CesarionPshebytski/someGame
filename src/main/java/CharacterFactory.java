@@ -16,4 +16,5 @@ class CharacterFactory {
 }
 
 
-//CharacterFactory: Character createCharacter() - returns random instance of any existing character.
+//CharacterFactory: Character createCharacter() - returns random
+//instance of any existing character.

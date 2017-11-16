@@ -2,7 +2,7 @@ class Knight extends Character {
     private KickBehavior kickBehavior = new Sword();
 
     Knight() {
-        super(2, 12, 2, 21);
+        super(2, 21, 2, 12);
     }
 
     @Override

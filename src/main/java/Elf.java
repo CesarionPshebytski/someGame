@@ -20,4 +20,5 @@ public class Elf extends Character {
 }
 
 
-//Elf: power = 10, hp= 10, kick(kill everybody which weaker than him, otherwise decrease power of the other character by 1)
+//Elf: power = 10, hp= 10, kick(kill everybody which weaker than him,
+// otherwise decrease power of the other character by 1)
