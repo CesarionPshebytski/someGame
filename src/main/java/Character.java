@@ -10,9 +10,7 @@ public abstract class Character {
 
     protected Character(int minHp, int maxHp, int minPower, int maxPower) {
         hp = new Random().nextInt(maxHp - minHp + 2) + minHp;
-        System.out.println("hp "+hp);
         power = new Random().nextInt(maxPower - minPower + 2) + minPower;
-        System.out.println("power "+power);
     }
 
     boolean isAlive() {

@@ -2,6 +2,7 @@ import java.util.Random;
 
 class CharacterFactory {
     Character createCharacter() {
+        int x = new Random().nextInt(4);
         switch (new Random().nextInt(4)) {
             case 0:
                 return new King();
