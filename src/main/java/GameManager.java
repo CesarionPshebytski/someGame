@@ -5,7 +5,7 @@ public class GameManager extends CharacterFactory {
         charactersStatus(c1, c2);
         if (c1.getClass().equals(c2.getClass())
                 && (c1.getClass().equals(Hobbit.class)
-                        || c2.getClass().equals(Elf.class))) {
+                || c2.getClass().equals(Elf.class))) {
             System.out.println("We cannot even kill ourselves :c");
         } else {
             while (c1.isAlive() && c2.isAlive()) {
@@ -17,13 +17,6 @@ public class GameManager extends CharacterFactory {
             }
             System.out.println(c1.isAlive()?c1.getName():c2.getName()+" wins!");
         }
-    }
-
-    public static void main(String[] args) {
-        GameManager gameManager = new GameManager();
-        Character c1 = new King();
-        Character c2 = new Knight();
-        gameManager.fight(c1,c2);
     }
 
     private void charactersStatus(Character c1, Character c2) {
