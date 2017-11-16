@@ -51,15 +51,6 @@ public abstract class Character {
         }
     }
 
-    @Override
-    public boolean equals(Object o) {
-        if (this == o) return true;
-        if (!(o instanceof Character)) return false;
-
-        Character character = (Character) o;
-
-        return power == character.power && hp == character.hp;
-    }
 }
 
 
