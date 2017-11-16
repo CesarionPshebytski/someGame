@@ -24,7 +24,6 @@ public class CharacterTest {
 
     @Test
     public void getHpTest() throws Exception {
-        System.out.println(character.getHp());
         assertFalse(character.getHp() == 5);
     }
 
