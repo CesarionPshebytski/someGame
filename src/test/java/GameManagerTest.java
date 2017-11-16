@@ -2,7 +2,7 @@ import org.junit.Test;
 
 import static org.junit.Assert.*;
 
-public class MainTest {
+public class GameManagerTest {
 
     @Test
     public void fight() throws Exception {
