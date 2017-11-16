@@ -3,16 +3,7 @@ import java.util.Random;
 class CharacterFactory {
     Character createCharacter() {
         int x = new Random().nextInt(4);
-        switch (new Random().nextInt(4)) {
-            case 0:
-                return new King();
-            case 1:
-                return new Knight();
-            case 2:
-                return new Elf();
-            default:
-                return new Hobbit();
-        }
+        return x==0?new King():x==1?new Knight():x==2?new Elf():new Hobbit();
     }
 }
 

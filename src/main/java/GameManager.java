@@ -3,9 +3,7 @@
 public class GameManager extends CharacterFactory {
     public void fight(Character c1, Character c2) {
         charactersStatus(c1, c2);
-        if (c1.getClass().equals(c2.getClass())
-                && (c1.getClass().equals(Hobbit.class)
-                || c2.getClass().equals(Elf.class))) {
+        if (c1.getClass().equals(c2.getClass())==(c1.getClass().equals(Hobbit.class))) {
             System.out.println("We cannot even kill ourselves :c");
         } else {
             while (c1.isAlive() && c2.isAlive()) {
@@ -15,7 +13,7 @@ public class GameManager extends CharacterFactory {
                 c2 = c1;
                 c1 = temp;
             }
-            System.out.println(c1.isAlive()?c1.getName():c2.getName()+" wins!");
+            System.out.println(c1.isAlive() ? c1.getName() : c2.getName() + " wins!");
         }
     }
 

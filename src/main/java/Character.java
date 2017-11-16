@@ -44,13 +44,8 @@ public abstract class Character {
     }
 
     public void setPower(int power) {
-        if (power < 0) {
-            this.power = 0;
-        } else {
-            this.power = power;
-        }
+        this.power = (power<0)?0:power;
     }
-
 }
 
 
