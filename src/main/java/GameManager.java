@@ -4,9 +4,9 @@ public class GameManager extends CharacterFactory {
     public void fight(Character c1, Character c2) {
         charactersStatus(c1, c2);
         System.out.println(
-                (c1.equals(c2) && (c1 instanceof Hobbit || c2 instanceof Elf)?
-                        "We cannot even kill ourselves :c":
-                battle(c1,c2)));
+                (c1.equals(c2) && (c1 instanceof Hobbit || c2 instanceof Elf) ?
+                        "We cannot even kill ourselves :c" :
+                        battle(c1, c2)));
     }
 
     private String battle(Character c1, Character c2) {
