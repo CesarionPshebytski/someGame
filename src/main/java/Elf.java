@@ -8,8 +8,8 @@ public class Elf extends Character {
     @Override
     void kick(Character character) {
         shout("Here we go, " + character.getName() + "!");
-        character.setHp(character.getPower() < getPower()?0:character.getPower() - 1);
-        character.setPower(character.getPower() < getPower()?0:character.getPower());
+        character.setHp(character.getPower() <= getPower()?0:character.getPower() - 1);
+        character.setPower(character.getPower() <= getPower()?0:character.getPower());
         shout(character.getName() + ", better luck next time!\n");
     }
 }
