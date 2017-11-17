@@ -44,7 +44,7 @@ public abstract class Character {
     }
 
     public void setPower(int power) {
-        this.power = power<0?0:power;
+        this.power = power < 0 ? 0 : power;
     }
 }
 
